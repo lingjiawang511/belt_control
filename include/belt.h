@@ -4,28 +4,28 @@
 #include "stm32f10x.h"
 #include "delay.h"
 /**********************∆§¥¯1 IO≈‰÷√****************************/
-//#define	BELT_SPEED11_IO					GPIO_Pin_4
-//#define	BELT_SPEED11_PORT				GPIOA
-//#define	BELT_SPEED12_IO					GPIO_Pin_2
-//#define	BELT_SPEED12_PORT				GPIOA
-//#define	BELT_SPEED13_IO					GPIO_Pin_3
-//#define	BELT_SPEED13_PORT				GPIOA
-//#define	BELT_DIR11_IO						GPIO_Pin_1
-//#define	BELT_DIR11_PORT					GPIOA
-//#define	BELT_ERR11_IO						GPIO_Pin_0
-//#define	BELT_ERR11_PORT					GPIOB
-#define	BELT11_SPEED1_IO				GPIO_Pin_5
-#define	BELT11_SPEED1_PORT			GPIOB
-#define	BELT11_SPEED2_IO				GPIO_Pin_12
-#define	BELT11_SPEED2_PORT			GPIOC
-#define	BELT11_SPEED3_IO				GPIO_Pin_2
-#define	BELT11_SPEED3_PORT			GPIOD
-#define	BELT11_DIR_IO						GPIO_Pin_11
-#define	BELT11_DIR_PORT					GPIOC
-#define	BELT11_ERR_IO						GPIO_Pin_10
-#define	BELT11_ERR_PORT					GPIOC
+#define	BELT11_SPEED1_IO					GPIO_Pin_4
+#define	BELT11_SPEED1_PORT				GPIOA
+#define	BELT11_SPEED2_IO					GPIO_Pin_2
+#define	BELT11_SPEED2_PORT				GPIOA
+#define	BELT11_SPEED3_IO					GPIO_Pin_3
+#define	BELT11_SPEED3_PORT				GPIOA
+#define	BELT11_DIR_IO							GPIO_Pin_1
+#define	BELT11_DIR_PORT						GPIOA
+#define	BELT11_ERR_IO							GPIO_Pin_0
+#define	BELT11_ERR_PORT						GPIOB
+//#define	BELT11_SPEED1_IO				GPIO_Pin_5
+//#define	BELT11_SPEED1_PORT			GPIOB
+//#define	BELT11_SPEED2_IO				GPIO_Pin_12
+//#define	BELT11_SPEED2_PORT			GPIOC
+//#define	BELT11_SPEED3_IO				GPIO_Pin_2
+//#define	BELT11_SPEED3_PORT			GPIOD
+//#define	BELT11_DIR_IO						GPIO_Pin_11
+//#define	BELT11_DIR_PORT					GPIOC
+//#define	BELT11_ERR_IO						GPIO_Pin_10
+//#define	BELT11_ERR_PORT					GPIOC
 
-#define	BELT11_SENSOR1_IO				GPIO_Pin_1
+#define	BELT11_SENSOR1_IO				GPIO_Pin_8
 #define	BELT11_SENSOR1_PORT			GPIOB
 #define	BELT11_SENSOR2_IO				GPIO_Pin_9
 #define	BELT11_SENSOR2_PORT			GPIOB
@@ -43,16 +43,16 @@
 #define READ_BELT11_SENSOR1    	GPIO_ReadInputDataBit(BELT11_SENSOR1_PORT,BELT11_SENSOR1_IO)
 #define READ_BELT11_SENSOR2    	GPIO_ReadInputDataBit(BELT11_SENSOR2_PORT,BELT11_SENSOR2_IO)
 
-//#define BELT11_SPEED1				 		PAout(4)// PB5
-//#define BELT11_SPEED2 						PAout(2)// PB5
-//#define BELT11_SPEED3						PAout(3)// PB5
-//#define BELT11_DIR 							PAout(1)// PB5
-// #define BELT11_ERR 							PCout(10)// PB5
+#define BELT11_SPEED1				 		PAout(4)// PB5
+#define BELT11_SPEED2 					PAout(2)// PB5
+#define BELT11_SPEED3						PAout(3)// PB5
+#define BELT11_DIR 							PAout(1)// PB5
+#define BELT11_ERR 							PAout(0)// PB5
 
-#define BELT11_SPEED1				 		PBout(5)// PB5
-#define BELT11_SPEED2 					PCout(12)// PB5
-#define BELT11_SPEED3						PDout(2)// PB5
-#define BELT11_DIR 							PCout(11)// PB5
+//#define BELT11_SPEED1				 		PBout(5)// PB5
+//#define BELT11_SPEED2 					PCout(12)// PB5
+//#define BELT11_SPEED3						PDout(2)// PB5
+//#define BELT11_DIR 							PCout(11)// PB5
 
 #define Belt11_Speed(x3,x2,x1)	do{	BELT11_SPEED1 = x1;BELT11_SPEED2 = x2;BELT11_SPEED3 = x3;}while(0)
 /**********************∆§¥¯1 IO≈‰÷√****************************/

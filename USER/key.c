@@ -44,7 +44,7 @@ void KEY_GPIO_Config(void)
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_10MHz;
 	//调用库函数，初始化GPIO
 	GPIO_Init(DEVICE1_KEY_PORT, &GPIO_InitStructure);
-
+	
 }
 
 u8 Key_Scan(void)

@@ -28,6 +28,7 @@ void LED_GPIO_Config(void)
 	GPIO_Init(GPIOA, &GPIO_InitStructure);
 
  	GLED_OFF;
+	RLED_OFF ;
 	Gled_Num = 1;
 	Rled_Num = 0;
 }
