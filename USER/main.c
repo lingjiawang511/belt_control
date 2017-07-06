@@ -15,6 +15,7 @@ void delay_ms1(u16 ms)
 //配置时钟在target宏定义
 int main(void)
 {
+   static u8 testmaster = 0;
 		delay_init();
 		Belt11_Config();
 		Belt12_Config();
@@ -26,6 +27,7 @@ int main(void)
     TIM3_Config();
 		delay_ms(100);
     while(1){
+      testmaster++;
 			Belt11_Control();
 			Belt12_Control();
 		}
