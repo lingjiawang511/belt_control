@@ -16,6 +16,7 @@ void delay_ms1(u16 ms)
 int main(void)
 {
    static u8 testmaster = 0;
+  static u8 branchmaster = 0;
 		delay_init();
 		Belt11_Config();
 		Belt12_Config();
@@ -28,6 +29,7 @@ int main(void)
 		delay_ms(100);
     while(1){
       testmaster++;
+      branchmaster++;
 			Belt11_Control();
 			Belt12_Control();
 		}
