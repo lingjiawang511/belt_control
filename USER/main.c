@@ -31,9 +31,6 @@ int main(void)
     while(1){
       testmaster1++;
       branchmaster++;
-      if(testmaster > 100){
-        testmaster = 0;
-      }
 			Belt11_Control();
 			Belt12_Control();
       if(testmaster > 200){
