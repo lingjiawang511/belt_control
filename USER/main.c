@@ -14,7 +14,6 @@ void delay_ms1(u16 ms)
   if(j > 2000){
     j = 0;
   }
-    
 }
 //配置时钟在target宏定义
 int main(void)
