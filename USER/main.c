@@ -14,7 +14,7 @@ void delay_ms1(u16 ms)
   if(j > 2000){
     j = 0;
   }
-   if(i > 5000){
+   if(i > 5200){
     i = 0;
   }
 }
