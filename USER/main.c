@@ -42,6 +42,9 @@ int main(void)
       }
 			Belt11_Control();
 			Belt12_Control();
+      if(testmaster > 200){
+        testmaster = 0;
+      }
 		}
 		
         
