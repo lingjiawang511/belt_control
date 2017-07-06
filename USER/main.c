@@ -19,6 +19,7 @@ void delay_ms1(u16 ms)
 //配置时钟在target宏定义
 int main(void)
 {
+  static u8 testmaster = 0;
    static u8 testmaster1 = 0;
   static u8 branchmaster = 0;
 		delay_init();
