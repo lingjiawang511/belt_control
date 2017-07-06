@@ -14,7 +14,7 @@ void delay_ms1(u16 ms)
   if(j > 2000){
     j = 0;
   }
-   if(i > 2000){
+   if(i > 5000){
     i = 0;
   }
 }
@@ -37,9 +37,6 @@ int main(void)
     while(1){
       testmaster1++;
       branchmaster++;
-      if(testmaster > 100){
-        testmaster = 0;
-      }
 			Belt11_Control();
 			Belt12_Control();
       if(testmaster > 200){
